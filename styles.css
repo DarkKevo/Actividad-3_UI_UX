@@ -27,7 +27,8 @@ body {
     grid-template-areas:
         'header header'
         'banner banner'
-        'servicios servicios';
+        'servicios servicios'
+        'why why';
 }
 
 /*header*/
@@ -428,6 +429,38 @@ nav {
 #boton_derecho {
     right: 120px;
 }
+
+/*INICIO DE LA SECCION WHY*/
+
+.why {
+    grid-area: why;
+    height: 58rem;
+    background-color: #473769;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.promo {
+    margin-top: 8rem;
+}
+
+.promo h2 {
+    font-size: 55px;
+    margin-bottom: 4rem;
+}
+
+.promo iframe {
+    padding: 50px;
+    background-color: #24183e;
+    width: 100%;
+    height: 35rem;
+    border-radius: 50px;
+}
+
+
+
 
 /*Activacion de Navbar Hamburguesa*/
 @media screen and (min-width: 1028px) {
