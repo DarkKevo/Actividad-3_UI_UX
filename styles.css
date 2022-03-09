@@ -26,7 +26,8 @@ body {
     grid-template-rows: repeat(6, auto);
     grid-template-areas:
         'header header'
-        'banner banner';
+        'banner banner'
+        'servicios servicios';
 }
 
 /*header*/
@@ -123,7 +124,7 @@ nav {
     grid-area: banner;
     width: 200%;
     display: flex;
-    transition: all .6s;
+    transition: all 0.6s;
     margin-left: 0%;
 }
 
@@ -273,6 +274,159 @@ nav {
 
 .button-go_back a:hover {
     background-color: #3cad47;
+}
+
+/*Seccion Servicios y Slider de Servicios*/
+
+.servicios {
+    background-color: #130b24;
+    height: 58rem;
+    grid-area: servicios;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-servicios {
+    margin-top: 8rem;
+    color: white;
+    width: 85%;
+    margin-bottom: 4rem;
+}
+
+.texto-servicios h2 {
+    font-size: 60px;
+}
+
+.texto-servicios p {
+    font-size: 30px;
+    margin-top: 2rem;
+}
+
+.contenedor-slider {
+    width: 95%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-servicios {
+    display: flex;
+    width: 500%;
+    height: 20rem;
+    margin-left: -100%;
+}
+
+.item-s {
+    display: block;
+}
+
+.item-1,
+.item-2,
+.item-3,
+.item-4,
+.item-5 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #473769;
+    border-radius: 50px;
+}
+
+.item-1 .content {
+    background-image: url('img/casa.png');
+    background-size: cover;
+    background-position: center;
+    width: 95%;
+    height: 85%;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 60px;
+    color: #ffffff;
+}
+
+.item-2 .content {
+    background-image: url('img/plan2.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 95%;
+    height: 85%;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 60px;
+    color: #ffffff;
+}
+
+.item-3 .content {
+    background-image: url('img/plan4.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 95%;
+    height: 85%;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 60px;
+    color: #ffffff;
+}
+
+.item-4 .content {
+    background-image: url('img/plan5.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 95%;
+    height: 85%;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 60px;
+    color: #ffffff;
+}
+
+.item-5 .content {
+    background-image: url('img/plan3.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 95%;
+    height: 85%;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 60px;
+    color: #ffffff;
+}
+
+#boton_izquierdo,
+#boton_derecho {
+    position: absolute;
+    color: #684da39f;
+    top: 41%;
+    font-size: 70px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#boton_izquierdo:hover,
+#boton_derecho:hover {
+    color: #684da3;
+}
+
+#boton_izquierdo {
+    left: 120px;
+}
+
+#boton_derecho {
+    right: 120px;
 }
 
 /*Activacion de Navbar Hamburguesa*/
