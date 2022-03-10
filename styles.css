@@ -57,7 +57,7 @@ header.sticky {
 }
 
 #check:checked ~ .nav-menu.sticky {
-    top: 8vh;
+    top: 9vh;
 }
 
 /*navegacion*/
@@ -138,32 +138,34 @@ nav {
     background-image: url('img/banner.jpg');
     background-size: cover;
     background-position: center;
-    height: 58rem;
+    height: 51rem;
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     color: #ffffff;
+    text-align: center;
 }
 
 .slide1 h2 {
-    font-size: 60px;
+    font-size: 35px;
 }
 
 .slide1 p {
-    font-size: 38px;
+    font-size: 20px;
     margin-top: 4rem;
 }
 
 .text-banner {
-    margin-left: 5rem;
+    margin-top: 5rem;
     width: 60%;
 }
 
 .boton-banner {
-    width: 38%;
+    margin-top: 5rem;
+    width: 100%;
     text-align: center;
-    margin-top: 35rem;
     animation: mover 0.6s infinite alternate;
 }
 
@@ -179,9 +181,9 @@ nav {
 .boton-banner a {
     width: 100%;
     color: #ffffff;
-    padding: 40px 70px;
+    padding: 20px 50px;
     background-color: #58d264;
-    font-size: 40px;
+    font-size: 20px;
     font-weight: 600;
     transition: 0.5s;
     border-radius: 100px;
@@ -195,33 +197,35 @@ nav {
     background-image: url('img/banner3.jpg');
     background-size: cover;
     background-position: center;
-    height: 58rem;
     width: 100%;
     display: flex;
+    flex-direction: column-reverse;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    text-align: center;
     color: #ffffff;
+    height: 51rem;
 }
 
 .formulario-banner {
-    margin-top: 8rem;
     background-color: #130b24;
-    padding: 4rem;
-    width: 50%;
+    padding: 3rem;
+    width: 75%;
     border-radius: 100px;
+    margin-top: 4rem;
 }
 
 .formulario-banner h2 {
-    margin-bottom: 2rem;
-    font-size: 30px;
+    margin-bottom: 1rem;
+    font-size: 20px;
 }
 
 .formulario-banner form input {
     border: none;
-    margin: 10px 0;
-    padding: 15px;
+    margin: 5px 0;
+    padding: 10px;
     border-radius: 100px;
-    font-size: 25px;
+    font-size: 10px;
     background-color: #24183e;
     color: rgba(255, 255, 255, 0.562);
     font-family: 'Exo', sans-serif;
@@ -233,13 +237,13 @@ nav {
 }
 
 .formulario-banner form button {
-    padding: 15px;
-    margin-top: 2rem;
+    padding: 5px;
+    margin-top: 1rem;
     border-radius: 100px;
     background-color: #58d264;
     border: none;
     color: #ffffff;
-    font-size: 35px;
+    font-size: 15px;
     font-weight: 600;
     font-family: 'Exo', sans-serif;
     transition: 0.5s;
@@ -251,35 +255,32 @@ nav {
 
 .texto-slide2 {
     margin-top: 8rem;
-    width: 35%;
+    width: 80%;
     display: flex;
     flex-direction: column;
 }
 
-.texto-banner2 {
-    margin-bottom: 6rem;
-}
-
 .texto-banner2 h2 {
-    font-size: 65px;
+    font-size: 30px;
 }
 
 .texto-banner2 p {
-    margin-top: 3rem;
-    font-size: 35px;
+    margin-top: 2rem;
+    font-size: 20px;
 }
 
 .button-go_back {
     width: 100%;
     text-align: center;
     animation: mover 1s infinite alternate;
+    margin-top: 3.5rem;
 }
 
 .button-go_back a {
     color: #ffffff;
-    padding: 30px 70px;
+    padding: 20px 40px;
     background-color: #58d264;
-    font-size: 40px;
+    font-size: 15px;
     font-weight: 600;
     transition: 0.5s;
     border-radius: 100px;
@@ -293,33 +294,34 @@ nav {
 
 .servicios {
     background-color: #130b24;
-    height: 58rem;
+    height: 51rem;
     grid-area: servicios;
     width: 100%;
     display: flex;
     flex-direction: column;
+    text-align: center;
     justify-content: center;
     align-items: center;
 }
 
 .texto-servicios {
-    margin-top: 8rem;
+    margin-top: 2rem;
     color: white;
     width: 85%;
     margin-bottom: 4rem;
 }
 
 .texto-servicios h2 {
-    font-size: 60px;
+    font-size: 30px;
 }
 
 .texto-servicios p {
-    font-size: 30px;
+    font-size: 20px;
     margin-top: 2rem;
 }
 
 .contenedor-slider {
-    width: 95%;
+    width: 85%;
     overflow: hidden;
     position: relative;
 }
@@ -359,7 +361,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    font-size: 60px;
+    font-size: 30px;
     color: #ffffff;
 }
 
@@ -373,7 +375,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    font-size: 60px;
+    font-size: 30px;
     color: #ffffff;
 }
 
@@ -387,7 +389,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    font-size: 60px;
+    font-size: 30px;
     color: #ffffff;
 }
 
@@ -401,7 +403,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    font-size: 60px;
+    font-size: 30px;
     color: #ffffff;
 }
 
@@ -415,7 +417,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    font-size: 60px;
+    font-size: 30px;
     color: #ffffff;
 }
 
@@ -435,18 +437,18 @@ nav {
 }
 
 #boton_izquierdo {
-    left: 120px;
+    left: 30px;
 }
 
 #boton_derecho {
-    right: 120px;
+    right: 30px;
 }
 
 /*INICIO DE LA SECCION WHY*/
 
 .why {
     grid-area: why;
-    height: 58rem;
+    height: 51rem;
     background-color: #24183e;
     display: flex;
     align-items: center;
@@ -455,19 +457,24 @@ nav {
 }
 
 .promo {
-    margin-top: 8rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .promo h2 {
-    font-size: 55px;
+    width: 80%;
+    font-size: 35px;
     margin-bottom: 4rem;
 }
 
 .promo iframe {
-    padding: 50px;
+    padding: 20px;
     background-color: #130b24;
-    width: 100%;
-    height: 35rem;
+    width: 90%;
+    height: 20rem;
     border-radius: 50px;
 }
 
@@ -476,42 +483,43 @@ nav {
 /*Inicio de About Me*/
 
 .about {
-    height: 58rem;
+    width: 100%;
+    height: 60rem;
     grid-area: about;
     color: #ffffff;
     background-color: #130b24;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    text-align: center;
 }
 
 .texto-about {
-    margin-top: 8rem;
-    width: 45%;
+    width: 80%;
 }
 
 .texto-about h2 {
-    font-size: 45px;
+    font-size: 25px;
 }
 
 .texto-about p {
-    margin-top: 4rem;
-    font-size: 26px;
+    margin-top: 1rem;
+    font-size: 15px;
 }
 
 .formulario-about {
-    margin-top: 8rem;
-    width: 40%;
+    margin-top: 3rem;
     background-color: #604c8b;
     padding: 3rem;
-    width: 35%;
+    width: 75%;
     border-radius: 100px;
     animation: mover 1.5s infinite alternate;
 }
 
 .formulario-about h2 {
-    font-size: 30px;
-    margin-bottom: 2rem;
+    font-size: 20px;
+    margin-bottom: 1rem;
 }
 
 .formulario-about form {
@@ -521,10 +529,10 @@ nav {
 
 .formulario-about form input {
     border: none;
-    margin: 10px 0;
-    padding: 15px;
+    margin: 5px 0;
+    padding: 10px;
     border-radius: 100px;
-    font-size: 25px;
+    font-size: 10px;
     background-color: #24183e;
     color: rgba(255, 255, 255, 0.562);
     font-family: 'Exo', sans-serif;
@@ -533,23 +541,22 @@ nav {
 .formulario-about form textarea {
     border: none;
     margin: 10px 0;
-    border-radius: 30px;
-    font-size: 25px;
+    border-radius: 100px;
+    font-size: 10px;
     background-color: #24183e;
     color: rgba(255, 255, 255, 0.562);
     font-family: 'Exo', sans-serif;
-    padding: 15px;
-    height: 10rem;
+    padding: 8px;
+    height: 2rem;
 }
 
 .formulario-about form button {
-    padding: 12px;
-    margin-top: 2rem;
+    padding: 5px;
     border-radius: 100px;
     background-color: #58d264;
     border: none;
     color: #ffffff;
-    font-size: 35px;
+    font-size: 15px;
     font-weight: 600;
     font-family: 'Exo', sans-serif;
     transition: 0.5s;
@@ -566,20 +573,20 @@ nav {
 .destacado {
     grid-area: destacado;
     background-color: #24183e;
-    height: 58rem;
+    height: 50rem;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .producto-destacado {
-    margin-top: 8rem;
     width: 80%;
 }
 
 .producto-destacado h2 {
-    font-size: 55px;
+    font-size: 30px;
     margin-bottom: 3rem;
 }
 
@@ -588,7 +595,7 @@ nav {
     display: flex;
     flex-direction: row;
     background-color: #130b24;
-    border-radius: 50px;
+    border-radius: 70px;
     padding: 50px;
 }
 
@@ -602,7 +609,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 40px;
+    font-size: 25px;
     color: #ffffff;
 }
 
@@ -617,8 +624,8 @@ nav {
 /*Inicio de Comentarios*/
 
 .destacado2-content {
-    margin-top: 12rem;
-    text-align: start;
+    height: 60rem;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -627,38 +634,40 @@ nav {
 }
 
 .destacado2-content h2 {
-    font-size: 60px;
+    font-size: 30px;
     width: 80%;
-    margin-bottom: 1rem;
 }
 
 .redonda {
-    width: 220px;
-    height: 220px;
-    border-radius: 200px;
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
     border: 10px solid #58d264;
+    margin-bottom: 1rem;
 }
 
 .opinion1,
 .opinion2 {
+    text-align: center;
     width: 80%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     margin-top: 4rem;
 }
 
 .texto-op {
-    width: 50%;
+    width: 100%;
 }
 
 .texto-op h3 {
-    font-size: 35px;
+    font-size: 25px;
 }
 
 .texto-op p {
-    margin-top: 2rem;
-    font-size: 25px;
+    margin-top: 1rem;
+    font-size: 15px;
 }
 
 /*<--------------------------------------------------->*/
@@ -674,20 +683,21 @@ nav {
     flex-direction: column;
     grid-area: preguntas;
     background-color: #130b24;
-    height: 58rem;
+    height: 50rem;
     justify-content: center;
     align-items: center;
     color: white;
 }
 
 .preguntas-frecuentes h2 {
-    font-size: 60px;
-    margin-bottom: 3rem;
-    margin-top: 8rem;
+    margin-top: 4rem;
+    font-size: 30px;
+    margin-bottom: 2rem;
 }
 
 .preguntas {
-    width: 80%;
+    margin-top: 2rem;
+    width: 85%;
     background-color: #24183e;
     padding: 3rem;
     border-radius: 100px;
@@ -712,7 +722,7 @@ nav {
 }
 
 .preguntas-frecuentes li h3 {
-    font-size: 28px;
+    font-size: 15px;
     transition: 0.4s;
 }
 
@@ -721,7 +731,7 @@ nav {
 }
 
 .preguntas-frecuentes li i {
-    font-size: 30px;
+    font-size: 20px;
     color: #58d264;
     transition: 0.4s;
 }
@@ -730,7 +740,7 @@ nav {
     margin-top: 1rem;
     display: none;
     text-align: justify;
-    font-size: 20px;
+    font-size: 10px;
 }
 
 .preguntas-frecuentes .borde-li2 {
@@ -747,14 +757,18 @@ footer {
 
 .footer-content {
     color: #58d264;
-    font-size: 18px;
+    font-size: 8px;
     padding: 20px 0;
     display: flex;
-    width: 85%;
-    justify-content: space-between;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .redes {
+    margin-top: 1rem;
     display: flex;
 }
 
