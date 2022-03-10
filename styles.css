@@ -32,7 +32,8 @@ body {
         'about about'
         'destacado destacado'
         'destacado2 destacado2'
-        'preguntas preguntas';
+        'preguntas preguntas'
+        'footer footer';
 }
 
 /*header*/
@@ -664,6 +665,10 @@ nav {
 
 /*Inicio de Preguntas Frecuentes*/
 
+.reverse {
+    transform: rotate(180deg);
+}
+
 .preguntas-frecuentes {
     display: flex;
     flex-direction: column;
@@ -719,6 +724,7 @@ nav {
 .preguntas-frecuentes li i{
 	font-size: 30px;
     color: #58d264;
+    transition: .4s;
 }
 
 .preguntas-frecuentes li p {
@@ -732,6 +738,39 @@ nav {
 	border-top: 2px solid #58d264;
 }
 
+footer {
+    grid-area: footer;
+    background-color: #24183e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content {
+    color: #58d264;
+    font-size: 18px;
+    padding: 20px 0;
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+}
+
+.redes {
+    display: flex;
+}
+
+.redes-icons {
+    margin-left: 20px;
+}
+
+.redes-icons a i{
+    color: #58d26493;
+    transition: .4s;
+}
+
+.redes-icons a i:hover{
+    color: #58d264;
+}
 
 /*Activacion de Navbar Hamburguesa*/
 @media screen and (min-width: 1028px) {
