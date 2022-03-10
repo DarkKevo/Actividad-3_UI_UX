@@ -24,10 +24,10 @@
                         <i class="fa-solid fa-bars"></i>
                     </label>
                     <ul class="nav-menu">
-                        <li><a href="#" class="active">Inicio</a></li>
-                        <li><a href="#">Servicios</a></li>
-                        <li><a href="#">¿Quienes Somos?</a></li>
-                        <li><a href="#">Preguntas</a></li>
+                        <li><a data-target="slider-contenedor" href="#" class="active btn-scroll-view" id="inicio">Inicio</a></li>
+                        <li><a data-target="servicios-s" href="#" id="servicios" class="btn-scroll-view">Servicios</a></li>
+                        <li><a data-target="about-s" href="#" id="quienes" class="btn-scroll-view">¿Quienes Somos?</a></li>
+                        <li><a data-target="preguntas-f" href="#" id="preguntas_nav" class="btn-scroll-view">Preguntas</a></li>
                     </ul>
                 </nav>
             </header>
@@ -53,15 +53,18 @@
                             <input
                                 type="text"
                                 placeholder="Nombre y Apellido"
+                                required
                             />
                             <input
                                 type="email"
                                 placeholder="Correo Electronico"
+                                required
                             />
-                            <input type="tel" placeholder="Telefono" />
+                            <input type="tel" placeholder="Telefono" required/>
                             <input
                                 type="text"
                                 placeholder="Indicanos tu Zona"
+                                required
                             />
                             <button type="submit">Enviar</button>
                         </form>
@@ -82,7 +85,7 @@
                     </div>
                 </div>
             </div>
-            <section class="servicios">
+            <section class="servicios" id="servicios-s">
                 <div class="texto-servicios">
                     <h2>One Connection - Speed</h2>
                     <p>
@@ -143,7 +146,7 @@
                     ></iframe>
                 </div>
             </section>
-            <section class="about">
+            <section class="about" id="about-s">
                 <div class="texto-about">
                     <h2>One Connection - About me</h2>
                     <p>
@@ -168,14 +171,15 @@
                 <div class="formulario-about">
                     <h2>Pide tu Información</h2>
                     <form>
-                        <input type="text" placeholder="Nombre y Apellido" />
-                        <input type="email" placeholder="Correo Electronico" />
+                        <input type="text" placeholder="Nombre y Apellido" required/>
+                        <input type="email" placeholder="Correo Electronico" required/>
                         <textarea
                             name="textarea"
                             placeholder="Consulta tu Informacion"
                             id=""
                             cols="30"
                             rows="10"
+                            required
                         ></textarea>
                         <button type="submit">Enviar</button>
                     </form>
@@ -218,7 +222,7 @@
                     </div>
                 </div>
             </section>
-            <section class="preguntas-frecuentes">
+            <section class="preguntas-frecuentes" id="preguntas-f">
                 <h2>Preguntas Frecuentes</h2>
                 <ul class="preguntas">
                     <li>
