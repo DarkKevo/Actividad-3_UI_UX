@@ -239,10 +239,6 @@ nav {
     background-color: #3cad47;
 }
 
-.formulario-banner form input:focus {
-    outline: none;
-}
-
 .texto-slide2 {
     margin-top: 8rem;
     width: 35%;

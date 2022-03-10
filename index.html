@@ -49,22 +49,25 @@
                 <div class="slide2">
                     <div class="formulario-banner">
                         <h2>Cuentanos Sobre ti...</h2>
-                        <form>
+                        <form id="formulario-banner">
                             <input
+                                id="nombre-apellido"
                                 type="text"
                                 placeholder="Nombre y Apellido"
                                 required
                             />
                             <input
+                                id="correo-electronico"
                                 type="email"
                                 placeholder="Correo Electronico"
                                 required
                             />
-                            <input type="tel" placeholder="Telefono" required/>
+                            <input id="telefono-f" type="tel" placeholder="Telefono" required/>
                             <input
                                 type="text"
                                 placeholder="Indicanos tu Zona"
                                 required
+                                id="zona"
                             />
                             <button type="submit">Enviar</button>
                         </form>
@@ -170,13 +173,13 @@
                 </div>
                 <div class="formulario-about">
                     <h2>Pide tu Información</h2>
-                    <form>
-                        <input type="text" placeholder="Nombre y Apellido" required/>
-                        <input type="email" placeholder="Correo Electronico" required/>
+                    <form id="formulario-about">
+                        <input type="text" id="nombre-about" placeholder="Nombre y Apellido" required/>
+                        <input type="email" id="correo-about" placeholder="Correo Electronico" required/>
                         <textarea
                             name="textarea"
                             placeholder="Consulta tu Informacion"
-                            id=""
+                            id="informacion-about"
                             cols="30"
                             rows="10"
                             required

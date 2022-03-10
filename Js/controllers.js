@@ -157,3 +157,42 @@ document.addEventListener('click', function (event) {
 
     element.scrollIntoView({ behavior: 'smooth', block: 'center' });
 });
+
+//<---------------------------------------------------->
+
+//CONTROLADOR DE FORMULARIOS
+
+$(document).ready(function () {
+    //add
+    $('#formulario-banner').submit(function (e) {
+        const postData = {
+            name: $('#nombre-apellido').val(),
+            email: $('#correo-electronico').val(),
+            telefono: $('#telefono-f').val(),
+            zona: $('#zona').val(),
+        };
+        $.post("datos-add.php", postData,
+            function (response) {
+                console.log(response)
+                $('#formulario-banner').trigger('reset')
+            },
+        );
+        e.preventDefault();
+    });
+
+    //add2
+    $('#formulario-about').submit(function (e) {
+        const postData = {
+            name: $('#nombre-about').val(),
+            email: $('#correo-about').val(),
+            informacion: $('#informacion-about').val()
+        };
+        $.post("datos-add2.php", postData,
+            function (response) {
+                console.log(response)
+                $('#formulario-banner').trigger('reset')
+            },
+        );
+        e.preventDefault();
+    });
+});
