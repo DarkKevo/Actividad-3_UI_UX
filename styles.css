@@ -164,6 +164,16 @@ nav {
     width: 38%;
     text-align: center;
     margin-top: 35rem;
+    animation: mover 0.6s infinite alternate;
+}
+
+@keyframes mover {
+    0% {
+        transform: translateY(-1rem);
+    }
+    100% {
+        transform: translateY(1rem);
+    }
 }
 
 .boton-banner a {
@@ -262,6 +272,7 @@ nav {
 .button-go_back {
     width: 100%;
     text-align: center;
+    animation: mover 1s infinite alternate;
 }
 
 .button-go_back a {
@@ -415,7 +426,7 @@ nav {
     top: 41%;
     font-size: 70px;
     cursor: pointer;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 #boton_izquierdo:hover,
@@ -488,13 +499,14 @@ nav {
     font-size: 26px;
 }
 
-.formulario-about{
+.formulario-about {
     margin-top: 8rem;
     width: 40%;
     background-color: #604c8b;
     padding: 3rem;
     width: 35%;
     border-radius: 100px;
+    animation: mover 1.5s infinite alternate;
 }
 
 .formulario-about h2 {
@@ -516,14 +528,6 @@ nav {
     background-color: #24183e;
     color: rgba(255, 255, 255, 0.562);
     font-family: 'Exo', sans-serif;
-}
-
-.formulario-about form input:focus {
-    outline: none;
-}
-
-.formulario-about form textarea:focus {
-    outline: none;
 }
 
 .formulario-about form textarea {
@@ -602,7 +606,6 @@ nav {
     color: #ffffff;
 }
 
-
 .destacado2 {
     grid-area: destacado2;
     background-color: #24183e;
@@ -631,12 +634,13 @@ nav {
 
 .redonda {
     width: 220px;
-    height:220px;
+    height: 220px;
     border-radius: 200px;
-    border:10px solid #58d264;
+    border: 10px solid #58d264;
 }
 
-.opinion1, .opinion2 {
+.opinion1,
+.opinion2 {
     width: 80%;
     display: flex;
     align-items: center;
@@ -694,44 +698,43 @@ nav {
 .barra3,
 .barra4,
 .barra5 {
-	display: flex;
-	justify-content: space-between;
-	transition: 0.5s;
-	font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.5s;
+    font-size: 12px;
 }
 
 .preguntas-frecuentes li {
-	padding: 12px 0;
-	transition: 0.5s;
-	cursor: pointer;
+    padding: 12px 0;
+    transition: 0.5s;
+    cursor: pointer;
     margin: 20px auto;
 }
 
-.preguntas-frecuentes li h3{
-	font-size: 28px;
-    transition: .4s;
+.preguntas-frecuentes li h3 {
+    font-size: 28px;
+    transition: 0.4s;
 }
 
-.preguntas-frecuentes li h3:hover{
-	margin-left: 10px;
+.preguntas-frecuentes li h3:hover {
+    margin-left: 10px;
 }
 
-
-.preguntas-frecuentes li i{
-	font-size: 30px;
+.preguntas-frecuentes li i {
+    font-size: 30px;
     color: #58d264;
-    transition: .4s;
+    transition: 0.4s;
 }
 
 .preguntas-frecuentes li p {
     margin-top: 1rem;
-	display: none;
-	text-align: justify;
+    display: none;
+    text-align: justify;
     font-size: 20px;
 }
 
 .preguntas-frecuentes .borde-li2 {
-	border-top: 2px solid #58d264;
+    border-top: 2px solid #58d264;
 }
 
 footer {
@@ -759,14 +762,62 @@ footer {
     margin-left: 20px;
 }
 
-.redes-icons a i{
+.redes-icons a i {
     color: #58d26493;
-    transition: .4s;
+    transition: 0.4s;
 }
 
-.redes-icons a i:hover{
+.redes-icons a i:hover {
     color: #58d264;
 }
+
+/*<------------------------------------------------>*/
+
+/*All Animations*/
+
+#speed-t,
+#speed-p,
+#why-t,
+#about-f,
+#destacado-t,
+#destacado-tc,
+#preguntas-t {
+    opacity: 0;
+    transform: translatex(5rem);
+    transition: all 1s;
+}
+
+#contenedor-slider,
+#why-v,
+#about-t,
+#destacado-p,
+#op1,
+#op2,
+#preguntas-d {
+    opacity: 0;
+    transform: translateX(-5rem);
+    transition: all 1s;
+}
+
+#contenedor-slider.visible,
+#why-v.visible,
+#speed-t.visible,
+#speed-p.visible,
+#why-t.visible,
+#about-t.visible,
+#about-f.visible,
+#destacado-t.visible,
+#destacado-p.visible,
+#op1.visible,
+#op2.visible,
+#destacado-tc.visible,
+#preguntas-t.visible,
+#preguntas-d.visible {
+    opacity: 1;
+    transform: translateX(0rem);
+}
+
+/*<-------------------------------------------------->*/
 
 /*Activacion de Navbar Hamburguesa*/
 @media screen and (min-width: 1028px) {

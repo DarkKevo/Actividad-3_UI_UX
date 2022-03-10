@@ -171,12 +171,10 @@ $(document).ready(function () {
             telefono: $('#telefono-f').val(),
             zona: $('#zona').val(),
         };
-        $.post("datos-add.php", postData,
-            function (response) {
-                console.log(response)
-                $('#formulario-banner').trigger('reset')
-            },
-        );
+        $.post('datos-add.php', postData, function (response) {
+            console.log(response);
+            $('#formulario-banner').trigger('reset');
+        });
         e.preventDefault();
     });
 
@@ -185,14 +183,65 @@ $(document).ready(function () {
         const postData = {
             name: $('#nombre-about').val(),
             email: $('#correo-about').val(),
-            informacion: $('#informacion-about').val()
+            informacion: $('#informacion-about').val(),
         };
-        $.post("datos-add2.php", postData,
-            function (response) {
-                console.log(response)
-                $('#formulario-banner').trigger('reset')
-            },
-        );
+        $.post('datos-add2.php', postData, function (response) {
+            console.log(response);
+            $('#formulario-banner').trigger('reset');
+        });
         e.preventDefault();
     });
 });
+
+//<--------------------------------------------------------------------->
+
+// all animations
+
+//observar
+
+const item1 = document.getElementById('speed-t');
+const item2 = document.getElementById('speed-p');
+const item3 = document.getElementById('contenedor-slider');
+const item4 = document.getElementById('why-t');
+const item5 = document.getElementById('why-v');
+const item6 = document.getElementById('about-t');
+const item7 = document.getElementById('about-f');
+const item8 = document.getElementById('destacado-t')
+const item9 = document.getElementById('destacado-p')
+const item10 = document.getElementById('destacado-tc')
+const item11 = document.getElementById('op1')
+const item12 = document.getElementById('op2')
+const item13 = document.getElementById('preguntas-t')
+const item14 = document.getElementById('preguntas-d')
+
+const charge = (entradas, observador) => {
+    entradas.forEach((entrada) => {
+        if (entrada.isIntersecting) {
+            //entrada
+            entrada.target.classList.add('visible');
+        } else {
+            entrada.target.classList.remove('visible');
+        }
+    });
+};
+
+//observador
+
+const observador = new IntersectionObserver(charge, {
+    threshold: 0.5,
+});
+
+observador.observe(item1);
+observador.observe(item2);
+observador.observe(item3);
+observador.observe(item4);
+observador.observe(item5);
+observador.observe(item6);
+observador.observe(item7);
+observador.observe(item8);
+observador.observe(item9);
+observador.observe(item10);
+observador.observe(item11);
+observador.observe(item12);
+observador.observe(item13);
+observador.observe(item14);
