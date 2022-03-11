@@ -187,7 +187,7 @@ $(document).ready(function () {
         };
         $.post('datos-add2.php', postData, function (response) {
             console.log(response);
-            $('#formulario-banner').trigger('reset');
+            $('#formulario-about').trigger('reset');
         });
         e.preventDefault();
     });
