@@ -44,7 +44,7 @@ header {
     width: 100%;
     background-color: #130b24;
     grid-area: header;
-    padding: 20px 0;
+    padding: 4px 0;
     transition: 0.6s;
     z-index: 100;
 }
@@ -54,12 +54,12 @@ header img {
 }
 
 header.sticky {
-    padding: 10px 0;
+    padding: 2px 0;
     background-color: #1c0e3a;
 }
 
 #check:checked ~ .nav-menu.sticky {
-    top: 9vh;
+    top: 7vh;
 }
 
 /*navegacion*/
@@ -86,7 +86,7 @@ nav {
     position: fixed;
     height: 0vh;
     width: 50%;
-    top: 11vh;
+    top: 7vh;
     right: 0;
     text-align: center;
     background-color: #473769;
@@ -836,7 +836,7 @@ footer {
 /*<-------------------------------------------------->*/
 
 /*Activacion de Navbar Hamburguesa / responsives */
-@media screen and (min-width: 1028px) {
+@media screen and (min-width: 1025px) {
     header img {
         width: 90%;
     }
@@ -852,7 +852,7 @@ footer {
         width: 100%;
         position: relative;
         height: 100px;
-        top: 0;
+        top: 0 !important;
         background: none;
         transition: none;
         background-color: none;
@@ -870,27 +870,9 @@ footer {
     }
 }
 
-@media screen and (min-width: 414px) {
-    #check:checked ~ .nav-menu.sticky {
-        top: 8vh;
-    }
-
-    .slide1,
-    .slide2,
-    .servicios,
-    .why,
-    .about,
-    .destacado,
-    .destacado2,
-    .destacado2-content,
-    .preguntas-frecuentes {
-        height: 56rem;
-    }
-}
-
 @media screen and (min-width: 390px) {
     #check:checked ~ .nav-menu.sticky {
-        top: 8vh;
+        top: 6.5vh;
     }
 
     .slide1,
@@ -903,28 +885,6 @@ footer {
     .destacado2-content,
     .preguntas-frecuentes {
         height: 53rem;
-    }
-}
-
-@media screen and (min-width: 428px) {
-    #check:checked ~ .nav-menu.sticky {
-        top: 8vh;
-    }
-
-    .nav-menu {
-        top: 10vh;
-    }
-
-    .slide1,
-    .slide2,
-    .servicios,
-    .why,
-    .about,
-    .destacado,
-    .destacado2,
-    .destacado2-content,
-    .preguntas-frecuentes {
-        height: 58rem;
     }
 }
 
@@ -950,13 +910,58 @@ footer {
     }
 }
 
-@media screen and (min-width: 805px) {
+@media screen and (min-width: 414px) {
     #check:checked ~ .nav-menu.sticky {
-        top: 10vh;
+        top: 6vh;
     }
 
     .nav-menu {
-        top: 12vh;
+        top: 7vh;
+    }
+
+
+    .slide1,
+    .slide2,
+    .servicios,
+    .why,
+    .about,
+    .destacado,
+    .destacado2,
+    .destacado2-content,
+    .preguntas-frecuentes {
+        height: 56rem;
+    }
+}
+
+@media screen and (min-width: 428px) {
+    #check:checked ~ .nav-menu.sticky {
+        top: 6vh;
+    }
+
+    .nav-menu {
+        top: 6vh;
+    }
+
+    .slide1,
+    .slide2,
+    .servicios,
+    .why,
+    .about,
+    .destacado,
+    .destacado2,
+    .destacado2-content,
+    .preguntas-frecuentes {
+        height: 58rem;
+    }
+}
+
+@media screen and (min-width: 805px) {
+    #check:checked ~ .nav-menu.sticky {
+        top: 9vh;
+    }
+
+    .nav-menu {
+        top: 9vh;
     }
 
     .slide1,
@@ -1098,14 +1103,14 @@ footer {
         width: 80%;
         margin-bottom: 1rem;
     }
-    
+
     .redonda {
         width: 180px;
         height: 180px;
         border-radius: 200px;
         border: 10px solid #58d264;
     }
-    
+
     .opinion1,
     .opinion2 {
         width: 80%;
@@ -1122,7 +1127,7 @@ footer {
     .texto-op h3 {
         font-size: 35px;
     }
-    
+
     .texto-op p {
         margin-top: 2rem;
         font-size: 25px;
@@ -1145,6 +1150,514 @@ footer {
     }
 
     .footer-content {
-        font-size: 18px
+        font-size: 18px;
     }
 }
+
+@media screen and (min-width: 820px) {
+    #check:checked ~ .nav-menu.sticky {
+        top: 8vh;
+    }
+
+    .nav-menu {
+        top: 8vh;
+    }
+
+    .slide1,
+    .slide2,
+    .servicios,
+    .why,
+    .about,
+    .destacado,
+    .destacado2,
+    .destacado2-content,
+    .preguntas-frecuentes {
+        height: 74rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #check:checked ~ .nav-menu.sticky {
+        top: 6.5vh;
+    }
+
+    .nav-menu {
+        top: 7vh;
+    }
+
+    .slide1,
+    .slide2,
+    .servicios,
+    .why,
+    .about,
+    .destacado,
+    .destacado2,
+    .destacado2-content,
+    .preguntas-frecuentes {
+        height: 86rem;
+    }
+
+    .text-banner {
+        width: 80%;
+    }
+
+    .slide1 h2 {
+        font-size: 70px;
+    }
+
+    .slide1 p {
+        font-size: 40px;
+    }
+
+    .boton-banner {
+        margin-top: 8rem;
+    }
+
+    .boton-banner a {
+        font-size: 60px;
+    }
+
+    .formulario-banner {
+        margin-top: 4rem;
+        width: 80%;
+    }
+
+    .formulario-banner h2 {
+        margin-bottom: 1rem;
+        font-size: 35px;
+    }
+
+    .formulario-banner form input {
+        border: none;
+        margin: 10px 0;
+        padding: 15px;
+        font-size: 25px;
+    }
+
+    .formulario-banner form button {
+        padding: 15px;
+        margin-top: 2rem;
+        font-size: 30px;
+    }
+
+    .texto-slide2 {
+        margin-top: 4rem;
+        width: 80%;
+    }
+
+    .texto-banner2 h2 {
+        font-size: 60px;
+    }
+
+    .texto-banner2 p {
+        margin-top: 3rem;
+        font-size: 35px;
+    }
+
+    .button-go_back a {
+        padding: 20px 40px;
+        font-size: 40px;
+    }
+
+    .slider-servicios {
+        height: 30rem;
+    }
+
+    .texto-servicios h2 {
+        font-size: 60px;
+    }
+
+    .texto-servicios p {
+        font-size: 40px;
+        margin-top: 4rem;
+    }
+
+    .item-1 .content {
+        font-size: 40px;
+    }
+
+    .item-2 .content {
+        font-size: 40px;
+    }
+
+    .item-3 .content {
+        font-size: 40px;
+    }
+
+    .item-4 .content {
+        font-size: 40px;
+    }
+
+    .item-5 .content {
+        font-size: 40px;
+    }
+
+    .why {
+        height: 50rem;
+    }
+
+    .promo h2 {
+        font-size: 50px;
+        margin-bottom: 4rem;
+    }
+
+    .promo iframe {
+        padding: 20px;
+        width: 90%;
+        height: 30rem;
+    }
+
+    .texto-about h2 {
+        font-size: 50px;
+    }
+
+    .texto-about p {
+        margin-top: 2rem;
+        font-size: 2px;
+    }
+
+    .formulario-about {
+        margin-top: 6rem;
+    }
+
+    .formulario-about h2 {
+        font-size: 30px;
+        margin-bottom: 1rem;
+    }
+
+    .formulario-about form input {
+        font-size: 25px;
+    }
+
+    .formulario-about form textarea {
+        font-size: 25px;
+        height: 8rem;
+    }
+
+    .destacado {
+        height: 60rem;
+    }
+
+    .formulario-about form button {
+        padding: 15px;
+        margin-top: 1rem;
+        font-size: 25px;
+    }
+
+    .producto-destacado h2 {
+        font-size: 55px;
+    }
+
+    .destacado2 {
+        height: 60rem;
+    }
+
+    .destacado2-content {
+        align-items: center;
+        height: 100%;
+    }
+
+    .destacado2-content h2 {
+        font-size: 60px;
+    }
+
+    .redonda {
+        width: 200px;
+        height: 200px;
+        border-radius: 200px;
+        border: 10px solid #58d264;
+    }
+
+    .preguntas-frecuentes h2 {
+        font-size: 60px;
+    }
+
+    .preguntas-frecuentes li h3 {
+        font-size: 25px;
+    }
+
+    .preguntas-frecuentes li i {
+        font-size: 30px;
+    }
+
+    .preguntas-frecuentes li p {
+        font-size: 25px;
+    }
+
+    .footer-content {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1250px) {
+
+    .slide1,
+    .slide2,
+    .servicios,
+    .why,
+    .about,
+    .destacado,
+    .destacado2,
+    .destacado2-content,
+    .preguntas-frecuentes {
+        height: 60rem;
+    }
+
+    .slide1 {
+        flex-direction: row;
+        justify-content: space-evenly;
+        text-align: start;
+    }
+
+    .slide2 {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .text-banner {
+        width: 55%;
+    }
+
+    .boton-banner {
+        width: 30%;
+    }
+
+    .slide1 h2 {
+        font-size: 50px;
+    }
+
+    .slide1 p {
+        font-size: 35px;
+    }
+
+    .boton-banner {
+        margin-top: 34rem;
+    }
+
+    .boton-banner a {
+        font-size: 40px;
+    }
+
+    .formulario-banner {
+        margin-top: 6rem;
+        width: 40%;
+    }
+
+    .formulario-banner h2 {
+        margin-bottom: 1rem;
+        font-size: 35px;
+    }
+
+    .formulario-banner form input {
+        border: none;
+        margin: 10px 0;
+        padding: 15px;
+        font-size: 25px;
+    }
+
+    .formulario-banner form button {
+        padding: 15px;
+        margin-top: 2rem;
+        font-size: 30px;
+    }
+
+    .texto-slide2 {
+        margin-top: 6rem;
+        width: 40%;
+        text-align: start;
+    }
+
+    .texto-banner2 h2 {
+        font-size: 60px;
+    }
+
+    .texto-banner2 p {
+        margin-top: 3rem;
+        font-size: 35px;
+    }
+    
+    .button-go_back{
+        margin-top: 4rem;
+    }
+
+    .button-go_back a {
+        padding: 20px 40px;
+        font-size: 40px;
+    }
+
+    .slider-servicios {
+        height: 20rem;
+    }
+
+    #boton_izquierdo {
+        left: 120px;
+    }
+    
+    #boton_derecho {
+        right: 120px;
+    }
+
+    .texto-servicios {
+        text-align: start;
+    }
+
+    .texto-servicios h2 {
+        font-size: 55px;
+    }
+
+    .texto-servicios p {
+        font-size: 30px;
+        margin-top: 2rem;
+    }
+
+    .item-1 .content {
+        font-size: 48px;
+    }
+
+    .item-2 .content {
+        font-size: 48px;
+    }
+
+    .item-3 .content {
+        font-size: 48px;
+    }
+
+    .item-4 .content {
+        font-size: 48px;
+    }
+
+    .item-5 .content {
+        font-size: 48px;
+    }
+
+    .promo h2 {
+        font-size: 50px;
+        margin-bottom: 4rem;
+    }
+
+    .promo iframe {
+        padding: 20px;
+        width: 100%;
+        height: 30rem;
+    }
+
+    .texto-about {
+        width: 45%;
+    }
+
+    .texto-about h2 {
+        font-size: 40px;
+    }
+
+    .texto-about p {
+        margin-top: 2rem;
+        font-size: 22px;
+    }
+
+    .about {
+        flex-direction: row;
+        justify-content: space-evenly;
+        text-align: start;
+    }
+
+    .formulario-about {
+        margin-top: 6rem;
+        width: 40%;
+    }
+
+    .formulario-about h2 {
+        font-size: 30px;
+        margin-bottom: 1rem;
+    }
+
+    .formulario-about form input {
+        font-size: 25px;
+    }
+
+    .formulario-about form textarea {
+        font-size: 25px;
+        height: 8rem;
+    }
+
+    .destacado {
+        height: 60rem;
+        text-align: start;
+    }
+
+    .formulario-about form button {
+        padding: 15px;
+        margin-top: 1rem;
+        font-size: 25px;
+    }
+
+    .producto-destacado h2 {
+        font-size: 50px;
+    }
+
+    .destacado2 {
+        height: 60rem;
+    }
+
+    .item-d h3 {
+        font-size: 60px;
+    }
+
+    .destacado2-content {
+        align-items: center;
+        height: 100%;
+    }
+
+    .destacado2-content h2 {
+        font-size: 60px;
+        text-align: start;
+    }
+
+    .redonda {
+        width: 200px;
+        height: 200px;
+        border-radius: 200px;
+        border: 10px solid #58d264;
+    }
+
+    .preguntas-frecuentes h2 {
+        font-size: 60px;
+    }
+
+    .preguntas-frecuentes li h3 {
+        font-size: 25px;
+    }
+
+    .preguntas-frecuentes li i {
+        font-size: 30px;
+    }
+
+    .preguntas-frecuentes li p {
+        font-size: 25px;
+    }
+
+    .footer-content {
+        font-size: 20px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .redes {
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 1430px) {
+
+    .slide1,
+    .slide2,
+    .servicios,
+    .why,
+    .about,
+    .destacado,
+    .destacado2,
+    .destacado2-content,
+    .preguntas-frecuentes {
+        height: 57rem;
+    }
+}
+
