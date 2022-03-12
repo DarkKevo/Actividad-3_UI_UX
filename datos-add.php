@@ -8,9 +8,9 @@
         $telefono = $_POST['telefono'];
         $zona = $_POST['zona'];
 
-        $query = "INSERT INTO `lead` (`id`, `nombre_apellido`, `correo`, `telefono`, `zona`) VALUES ('', '$name', '$email', '$telefono', '$zona')";
+        $query = "INSERT INTO `leadbd`.`leads_data` (`id`, `nombre_apellido`, `correo`, `telefono`, `zona`) VALUES ('', '$name', '$email', '$telefono', '$zona')";
 
-        $result = mysqli_query($connection, $query);
+        $result = mysqli_query($conexion, $query);
         if(!$result) {
             die('Query Failed');
         }
